@@ -1,0 +1,58 @@
+    <!-- studentFinancial.html -->
+    <fieldset>
+        <h2>Net Price Calculator</h2>
+        <h3>Student Financials</h3>
+        <form>
+            <div ng-show="showIndependentQuestions()">
+                <dl>
+                    <dt>How many people are in the student's household?</dt>
+                    <dd><input type="number" name="studentNumberHousehold" ng-model="studentNumberHousehold" maxlength="2" /></dd>
+                </dl>
+                <hr />
+                <dl>
+                    <dt>How many of the people in the student's household will be college students during the academic year?</dt>
+                    <dd><input type="number" name="studentNumberStudents" ng-model="studentNumberStudents" maxlength="2" /></dd>
+                </dl>
+                <hr />
+            </div>
+            <dl>
+                <dt>How much did the student earn from working the previous year?</dt>
+                <dd><input type="number" name="studentWorkIncome" ng-model="studentWorkIncome" /></dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>How much did the student's spouse earn from working in the previous year?</dt>
+                <dd><input type="number" name="spouseWorkIncome" ng-model="spouseWorkIncome" /></dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>How much did the student (and spouse) receive in untaxed income the previous year?</dt>
+                <dd><input type="number" name="studentUntaxedIncome" ng-model="studentUntaxedIncome" /></dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>What is the amount of other taxable income received in the previous year?</dt>
+                <dd><input type="number" name="studentAdditionalIncome" ng-model="studentAdditionalIncome" /></dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>As of today, what is your (and your spouse's) current balance of cash, savings, and checking accounts?</dt>
+                <dd><input type="number" name="studentLiquidFunds" ng-model="studentLiquidFunds" /></dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>As of today, what is the net worth of your (and your spouse's) investments, including real estate (not your home)?</dt>
+                <dd><input type="number" name="studentInvestmentWorth" ng-model="studentInvestmentWorth" /></dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>As of today, what is the net worth of your (and your spouse's) current businesses and/or investment farms?</dt>
+                <dd><input type="number" name="studentBusinessWorth" ng-model="studentBusinessWorth" /></dd>
+            </dl>
+            <hr />
+            <div class="buttons">
+                <input type="submit" class="button previous" value="Previous" ng-click="sfPrevious()" />
+                <input type="submit" class="button next" value="Next" ng-click="sfNext()" />
+            </div>
+        </form>
+    </fieldset>

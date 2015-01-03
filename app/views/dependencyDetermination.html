@@ -1,0 +1,69 @@
+    <!-- dependencyDetermination.html -->
+    <fieldset>
+        <form>
+            <h2>Net Price Calculator</h2>
+            <h3>Dependency Determination</h3>
+            <dl>
+                <dt>Student's date of birth?</dt>
+                <dd><input name="studentBirthDate" ng-model="studentBirthDate" type="text" id="datepicker" /></dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>Does the student have children or dependents other than a spouse who will receive at least 50% of their financial support from the student?</dt>
+                <dd>
+                    <select name="dependentsStatus" ng-model="dependentsStatus">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>What is the student's marital status as of today?</dt>
+                <dd>
+                    <select name="studentMaritalStatus" ng-model="studentMaritalStatus">
+                        <option value="1">Married</option>
+                        <option value="2">Single</option>
+                        <option value="3">Divorced</option>
+                        <option value="4">Separated</option>
+                        <option value="5">Widowed</option>
+                    </select>
+                </dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>Is the student currently serving on active duty in the U.S. Armed Forces, National Guard or Reserves for purposes other than training?</dt>
+                <dd>
+                    <select name="militaryStatus" ng-model="militaryStatus">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>Is the student a veteran of the U.S. Armed Forces?</dt>
+                <dd>
+                    <select name="veteranStatus" ng-model="veteranStatus">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>When the student was age 13 or older, was the student in foster care, a dependent/ward of the court, or were both of the student's parents deceased?</dt>
+                <dd>
+                    <select name="orphanStatus" ng-model="orphanStatus">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </dd>
+            </dl>
+            <hr />
+            <div class="buttons">
+                <input type="submit" class="button previous" value="Previous" ng-click="ddPrevious()" />
+                <input type="submit" class="button next" value="Next" ng-click="ddNext()" />
+            </div>
+        </form>
+    </fieldset>

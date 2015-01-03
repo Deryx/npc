@@ -1,0 +1,171 @@
+    <!-- studentInformation.html -->
+    <fieldset>
+        <h2>Net Price Calculator</h2>
+        <h3>Student Information</h3>
+        <form>
+            <div ng-show="showStateQuestion()">
+                <dl>
+                    <dt>What is the student's state of residency?</dt>
+                    <dd>
+                        <select name="studentResidentState" ng-model="studentResidentState">
+                            <option value="AK">AK</option>
+                            <option value="AL">AL</option>
+                            <option value="AR">AR</option>
+                            <option value="AZ">AZ</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DC">DC</option>
+                            <option value="DE">DE</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="IA">IA</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="MA">MA</option>
+                            <option value="MD">MD</option>
+                            <option value="ME">ME</option>
+                            <option value="MH">MH</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MP">MP</option>
+                            <option value="MS">MS</option>
+                            <option value="MT">MT</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="NE">NE</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NV">NV</option>
+                            <option value="NY">NY</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="PA">PA</option>
+                            <option value="PR">PR</option>
+                            <option value="PW">PW</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VA">VA</option>
+                            <option value="VT">VT</option>
+                            <option value="WA">WA</option>
+                            <option value="WI">WI</option>
+                            <option value="WV">WV</option>
+                            <option value="WY">WY</option>
+                            <option value="OT">OT</option>
+                        </select>
+                    </dd>
+                </dl>
+                <hr />
+            </div>
+            <div ng-show="showSNRQuestions()">
+                <dl>
+                    <dt>What campus will the student attend?</dt>
+                    <dd>
+                        <select name="studentCampus" ng-model="studentCampus">
+                            <option value="BK">Brooklyn</option>
+                            <option value="CO">Co-op City</option>
+                            <option value="DC">DC-37</option>
+                            <option value="JOC">John Cardinal O'Connor</option>
+                            <option value="NR">New Rochelle</option>
+                            <option value="RP">Rosa Parks</option>
+                        </select>
+                    </dd>
+                </dl>
+                <hr />
+                <dl>
+                    <dt>Do you have a High School Diploma/GED?</dt>
+                    <dd>
+                        <select name="diplomaStatus" ng-model="diplomaStatus">
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                        </select>
+                    </dd>
+                </dl>
+                <hr />
+                <dl>
+                    <dt>Is this your first time attending the School of New Resources?</dt>
+                    <dd>
+                        <select name="snrStatus" ng-model="snrStatus">
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                        </select>
+                    </dd>
+                </dl>
+                <hr />
+            </div>
+            <div ng-show="!showSNRQuestions()">
+                <dl>
+                    <dt>Student's cumulative GPA (100 point scale)</dt>
+                    <dd><input type="number" name="gpa" ng-model="gpa" maxlength="3" /></dd>
+                </dl>
+                <hr />
+                <dl>
+                    <dt>What standardized test did you take?</dt>
+                    <dd>
+                        <select name="testType" ng-model="testType">
+                            <option value="SAT">SAT</option>
+                            <option value="ACT">ACT</option>
+                        </select>
+                    </dd>
+                </dl>
+                <div ng-show="testType == 'SAT'">
+                    <hr />
+                    <dl>
+                        <dt>SAT Math Score</dt>
+                        <dd><input type="number" name="satMath" ng-model="satMath" maxlength="3" /></dd>
+                    </dl>
+                    <hr />
+                    <dl>
+                        <dt>SAT Verbal Score</dt>
+                        <dd><input type="number" id="satVerbal" ng-model="satVerbal" maxlength="3" /></dd>
+                    </dl>
+                </div>
+                <div ng-show="testType == 'ACT'">
+                    <hr />
+                    <dl>
+                        <dt>ACT Score</dt>
+                        <dd><input type="number" name="actScore" ng-model="actScore" maxlength="2" /> </dd>
+                    </dl>
+                </div>
+                <hr />
+            </div>
+            <dl>
+                <dt>In what school year did the student first receive TAP?</dt>
+                <dd>
+                    <select name="tapStatus" ng-model="tapStatus">
+                        <option value="1">2000-01 to Now</option>
+                        <option value="2">1994-95 to 1999-2000</option>
+                        <option value="3">1992-93 or 1993-94</option>
+                        <option value="4">1990-91 or 1991-92</option>
+                        <option value="5">1989-90</option>
+                        <option value="6">1988-89 or Earlier</option>
+                    </select>
+                </dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>What is the student's preferred housing option for the academic year?</dt>
+                <dd>
+                    <select name="housingStatus" ng-model="housingStatus">
+                        <option value="1">On-Campus</option>
+                        <option value="2">Off-Campus</option>
+                    </select>
+                </dd>
+            </dl>
+            <hr />
+            <div class="buttons">
+                <input type="submit" class="button previous" value="Previous" ng-click="siPrevious()" />
+                <input type="submit" class="button next" value="Next" ng-click="siNext()" />
+            </div>
+        </form>
+    </fieldset>

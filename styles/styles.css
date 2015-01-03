@@ -1,0 +1,110 @@
+body {
+  padding-top: 2em;
+  padding-bottom: 1em;
+  background: white url(../images/castle-cash-seal-bg_50.png) top left no-repeat;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif; }
+  body fieldset {
+    margin: 0 auto;
+    padding: 20px;
+    width: 900px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid #cccccc;
+    background: rgba(255, 255, 255, 0.7); }
+    body fieldset h2 {
+      margin-left: 20px;
+      margin-bottom: 40px;
+      color: white;
+      background: #012345;
+      padding: 5px 5px 5px 10px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px; }
+    body fieldset h3 {
+      width: 95%;
+      margin-left: 20px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid black; }
+    body fieldset h4 {
+      margin-left: 20px;
+      margin-right: 40px;
+      margin-bottom: 10px; }
+    body fieldset h5 {
+      margin-left: 60px; }
+    body fieldset p {
+      margin-left: 20px;
+      margin-right: 40px; }
+    body fieldset ul {
+      margin-left: 40px; }
+    body fieldset dl {
+      margin-left: 20px;
+      height: 30px;
+      clear: both; }
+      body fieldset dl dt {
+        float: left;
+        width: 40em;
+        font-size: 85%; }
+      body fieldset dl dd {
+        float: right;
+        margin-right: 30px; }
+    body fieldset hr {
+      border: 0;
+      border-bottom: 1px dotted black;
+      padding-top: 10px;
+      width: 95%; }
+    body fieldset select {
+      border: 1px solid #cccccc;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      padding: 3px; }
+    body fieldset input[type="number"] {
+      border: 1px solid #cccccc;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      padding: 3px;
+      text-align: right; }
+    body fieldset .button {
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      padding: 12px 15px 12px 15px; }
+    body fieldset .next {
+      background: #2ecc71;
+      color: white;
+      border: 1px solid #2ecc71; }
+    body fieldset .previous {
+      background: #34495e;
+      color: white;
+      border: 1px solid #34495e; }
+    body fieldset .buttons {
+      width: 97%;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: right; }
+  body #dcosts, body #icosts, body #aid {
+    margin-left: 40px; }
+    body #dcosts dl, body #icosts dl, body #aid dl {
+      margin: 0; }
+    body #dcosts h5, body #icosts h5, body #aid h5 {
+      font-size: 95%;
+      margin-left: 0;
+      margin-bottom: 0;
+      text-decoration: underline; }
+  body #aid dl {
+    margin-left: 20px; }
+  body .total {
+    font-size: 125%;
+    margin-top: -10px;
+    padding-bottom: 0;
+    font-weight: bold; }
+    body .total hr {
+      border: 0;
+      border-top: 5px solid black; }
+    body .total dl {
+      margin-top: -15px; }
+      body .total dl dd {
+        font-weight: bold; }

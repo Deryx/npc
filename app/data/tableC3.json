@@ -1,0 +1,107 @@
+{
+  "allowances": {
+    "allowance": [
+      {
+        "hhmembers": "2",
+        "amounts": [
+          {
+            "cstudents": "1",
+            "amount": "24150"
+          },
+          {
+            "cstudents": "2",
+            "amount": "20020"
+          }
+        ]
+      },
+      {
+        "hhmembers": "3",
+        "amounts": [
+          {
+            "cstudents": "1",
+            "amount": "30070"
+          },
+          {
+            "cstudents": "2",
+            "amount": "25960"
+          },
+          {
+            "cstudents": "3",
+            "amount": "21830"
+          }
+        ]
+      },
+      {
+        "hhmembers": "4",
+        "amounts": [
+          {
+            "cstudents": "1",
+            "amount": "37130"
+          },
+          {
+            "cstudents": "2",
+            "amount": "33010"
+          },
+          {
+            "cstudents": "3",
+            "amount": "28900"
+          },
+          {
+            "cstudents": "4",
+            "amount": "24760"
+          }
+        ]
+      },
+      {
+        "hhmembers": "5",
+        "amounts": [
+          {
+            "cstudents": "1",
+            "amount": "43810"
+          },
+          {
+            "cstudents": "2",
+            "amount": "39670"
+          },
+          {
+            "cstudents": "3",
+            "amount": "35570"
+          },
+          {
+            "cstudents": "4",
+            "amount": "31450"
+          },
+          {
+            "cstudents": "5",
+            "amount": "27340"
+          }
+        ]
+      },
+      {
+        "hhmembers": "6",
+        "amounts": [
+          {
+            "cstudents": "1",
+            "amount": "51230"
+          },
+          {
+            "cstudents": "2",
+            "amount": "47110"
+          },
+          {
+            "cstudents": "3",
+            "amount": "43020"
+          },
+          {
+            "cstudents": "4",
+            "amount": "38870"
+          },
+          {
+            "cstudents": "5",
+            "amount": "34770"
+          }
+        ]
+      }
+    ]
+  }
+}

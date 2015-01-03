@@ -1,0 +1,255 @@
+{
+  "allowances": {
+    "allowance": [
+      {
+        "rstate": "AL",
+        "percentage": "0.02"
+      },
+      {
+        "rstate": "AK",
+        "percentage": "0.00"
+      },
+      {
+        "rstate": "AS",
+        "percentage": "0.02"
+      },
+      {
+        "rstate": "AZ",
+        "percentage": "0.02"
+      },
+      {
+        "rstate": "AR",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "CA",
+        "percentage": "0.05"
+      },
+      {
+        "rstate": "CN",
+        "percentage": "0.02"
+      },
+      {
+        "rstate": "CO",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "CT",
+        "percentage": "0.05"
+      },
+      {
+        "rstate": "DE",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "DC",
+        "percentage": "0.05"
+      },
+      {
+        "rstate": "FM",
+        "percentage": "0.02"
+      },
+      {
+        "rstate": "FL",
+        "percentage": "0.01"
+      },
+      {
+        "rstate": "GA",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "GU",
+        "percentage": "0.02"
+      },
+      {
+        "rstate": "HI",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "ID",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "IL",
+        "percentage": "0.02"
+      },
+      {
+        "rstate": "IN",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "IA",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "KS",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "KY",
+        "percentage": "0.04"
+      },
+      {
+        "rstate": "LA",
+        "percentage": "0.02"
+      },
+      {
+        "rstate": "ME",
+        "percentage": "0.04"
+      },
+      {
+        "rstate": "MH",
+        "percentage": "0.02"
+      },
+      {
+        "rstate": "MD",
+        "percentage": "0.06"
+      },
+      {
+        "rstate": "MA",
+        "percentage": "0.04"
+      },
+      {
+        "rstate": "MX",
+        "percentage": "0.02"
+      },
+      {
+        "rstate": "MI",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "MN",
+        "percentage": "0.04"
+      },
+      {
+        "rstate": "MS",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "MO",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "MT",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "NE",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "NV",
+        "percentage": "0.01"
+      },
+      {
+        "rstate": "NH",
+        "percentage": "0.01"
+      },
+      {
+        "rstate": "NJ",
+        "percentage": "0.04"
+      },
+      {
+        "rstate": "NM",
+        "percentage": "0.02"
+      },
+      {
+        "rstate": "NY",
+        "percentage": "0.06"
+      },
+      {
+        "rstate": "NC",
+        "percentage": "0.04"
+      },
+      {
+        "rstate": "ND",
+        "percentage": "0.01"
+      },
+      {
+        "rstate": "MP",
+        "percentage": "0.02"
+      },
+      {
+        "rstate": "OH",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "OK",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "OR",
+        "percentage": "0.05"
+      },
+      {
+        "rstate": "PW",
+        "percentage": "0.02"
+      },
+      {
+        "rstate": "PA",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "PR",
+        "percentage": "0.02"
+      },
+      {
+        "rstate": "RI",
+        "percentage": "0.04"
+      },
+      {
+        "rstate": "SC",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "SD",
+        "percentage": "0.01"
+      },
+      {
+        "rstate": "TN",
+        "percentage": "0.01"
+      },
+      {
+        "rstate": "TX",
+        "percentage": "0.01"
+      },
+      {
+        "rstate": "UT",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "VT",
+        "percentage": "0.03"
+      },
+      {
+        "rstate": "VI",
+        "percentage": "0.02"
+      },
+      {
+        "rstate": "VA",
+        "percentage": "0.04"
+      },
+      {
+        "rstate": "WA",
+        "percentage": "0.01"
+      },
+      {
+        "rstate": "WV",
+        "percentage": "0.02"
+      },
+      {
+        "rstate": "WI",
+        "percentage": "0.04"
+      },
+      {
+        "rstate": "WY",
+        "percentage": "0.01"
+      },
+      { "percentage": "0.02" },
+      {
+        "rstate": "OT",
+        "percentage": "0.02"
+      }
+    ]
+  }
+}

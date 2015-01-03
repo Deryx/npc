@@ -1,0 +1,43 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Net Price Calculator</title>
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link rel="shorcut icon" href="images/cnr.ico" />
+
+    <!-- [if lt IE9]
+        <script src=""></script>
+    <! [endif] -->
+</head>
+<body ng-app="calculatorApp">
+
+    <div ui-view></div>
+
+    <!-- JavaScript Dependencies -->
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-ui-router.js"></script>
+    <script src="app/application.js"></script>
+    <script src="scripts/jsonpath.js"></script>
+    <script src="app/controllers/CalculatorController.js"></script>
+    <script src="app/controllers/WelcomeController.js"></script>
+    <script src="app/controllers/DependencyDeterminationController.js"></script>
+    <script src="app/controllers/StudentInformationController.js"></script>
+    <script src="app/controllers/StudentFinancialsController.js"></script>
+    <script src="app/controllers/ParentFinancialsController.js"></script>
+    <script src="app/services/aaiContributionFactory.js"></script>
+    <script src="app/services/adjustedBusinessWorthFactory.js"></script>
+    <script src="app/services/allowancesFactory.js"></script>
+    <script src="app/services/assetsFactory.js"></script>
+    <script src="app/services/employmentAllowanceFactory.js"></script>
+    <script src="app/services/dataAccessFactory.js"></script>
+    <script src="app/services/incomeFactory.js"></script>
+    <script src="app/services/scholarshipFactory.js"></script>
+    <script src="app/services/summaryFactory.js"></script>
+    <script src="app/services/tapFactory.js"></script>
+    <script src="app/services/userFactory.js"></script>
+
+</body>
+</html>

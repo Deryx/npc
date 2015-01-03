@@ -1,0 +1,99 @@
+    <!-- summary.html -->
+    <fieldset>
+        <h2>Net Price Calculator</h2>
+        <h3>Summary</h3>
+        <h4>Your Cost of Attendance (COA)</h4>
+        <div id="dcosts">
+            <h5>Direct Costs</h5>
+            <dl>
+                <dt>Tuition &amp; Fees</dt>
+                <dd>{{ tuitionFees | number:0  }}</dd>
+            </dl>
+            <dl>
+                <dt>Room &amp; Board</dt>
+                <dd>{{ roomBoard | number:0  }}</dd>
+            </dl>
+        </div>
+        <div class="total">
+            <hr />
+            <dl>
+                <dt>Total Direct Costs</dt>
+                <dd>{{ directCost | number:0  }}</dd>
+            </dl>
+        </div>
+        <div id="icosts">
+            <h5>Indirect Costs</h5>
+            <dl>
+                <dt>Books &amp; Supplies</dt>
+                <dd>{{ bookSupplies | number:0  }}</dd>
+            </dl>
+            <dl>
+                <dt>Other Expenses</dt>
+                <dd>{{ otherExpenses | number:0  }}</dd>
+            </dl>
+        </div>
+        <div class="total">
+            <hr />
+            <dl>
+                <dt>Total Indirect Costs</dt>
+                <dd>{{ indirectCost | number:0  }}</dd>
+            </dl>
+        </div>
+        <div class="total">
+            <br />
+            <dl>
+                <dt>Total Cost of Attendance (Direct + Indirect Costs)</dt>
+                <dd>{{ totalCost | number:0  }}</dd>
+            </dl>
+        </div>
+
+        <h4>Your Estimated Grants &amp; Scholarships</h4>
+        <div id="aid">
+            <div ng-show="showPellAward()">
+                <h5>Federal Grants</h5>
+                <dl>
+                    <dt>Pell Grant</dt>
+                    <dd>{{ pellAward | number:0  }}</dd>
+                </dl>
+            </div>
+
+            <div ng-show="showTAPAward()">
+                <h5>State Grants & Scholarships</h5>
+                <dl>
+                    <dt>Tuition Assistance Program (TAP)</dt>
+                    <dd>{{ tapAward | number:0  }}</dd>
+                </dl>
+            </div>
+
+            <div ng-show="showMeritScholarship()">
+                <h5>College Grants &amp; Scholarships</h5>
+                <dl>
+                    <dt>{{ scholarshipName }}</dt>
+                    <dd>{{ scholarshipAward | number:0 }}</dd>
+                </dl>
+            </div>
+
+            <div ng-show="showOtherAid()">
+                <h5>Other Aid (May include loans and work/study)</h5>
+                <dl>
+                    <dt>Other Aid</dt>
+                    <dd>{{ otherAid | number:0 }}</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="total">
+            <hr />
+            <dl>
+                <dt>Total Grants, Loans &amp; Scholarships</dt>
+                <dd>{{ totalAid | number:0  }}</dd>
+            </dl>
+        </div>
+
+        <div class="total">
+            <br />
+            <dl>
+                <dt>Your Estimated Net Price</dt>
+                <dd>{{ netPrice | number:0  }}</dd>
+            </dl>
+        </div>
+    </fieldset>

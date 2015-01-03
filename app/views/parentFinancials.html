@@ -1,0 +1,136 @@
+    <!-- parentFinancials.html -->
+    <fieldset>
+        <h2>Net Price Calculator</h2>
+        <h3>Parent Financials</h3>
+        <form>
+            <dl>
+                <dt>What is (are) the parent(s)' state of residency?</dt>
+                <dd>
+                    <select name="parentResidentState" ng-model="parentResidentState">
+                        <option value="AK">AK</option>
+                        <option value="AL">AL</option>
+                        <option value="AR">AR</option>
+                        <option value="AZ">AZ</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DC">DC</option>
+                        <option value="DE">DE</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="IA">IA</option>
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="MA">MA</option>
+                        <option value="MD">MD</option>
+                        <option value="ME">ME</option>
+                        <option value="MH">MH</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MP">MP</option>
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="NC">NC</option>
+                        <option value="ND">ND</option>
+                        <option value="NE">NE</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>
+                        <option value="NV">NV</option>
+                        <option value="NY">NY</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="PA">PA</option>
+                        <option value="PR">PR</option>
+                        <option value="PW">PW</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VA">VA</option>
+                        <option value="VT">VT</option>
+                        <option value="WA">WA</option>
+                        <option value="WI">WI</option>
+                        <option value="WV">WV</option>
+                        <option value="WY">WY</option>
+                        <option value="OT">OT</option>
+                    </select>
+                </dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>As of today, what is the marital status of the parents?</dt>
+                <dd>
+                    <select name="parentMaritalStatus" ng-model="parentMaritalStatus">
+                        <option value="1">Married</option>
+                        <option value="2">Single</option>
+                        <option value="3">Divorced</option>
+                        <option value="4">Separated</option>
+                        <option value="5">Widowed</option>
+                    </select>
+                </dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>How many people are in the parent(s)' household?</dt>
+                <dd><input type="number" name="parentNumberHousehold" ng-model="parentNumberHousehold" maxlength="2" /></dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>How many of the people in the parent(s)' household will be college students during the academic year?</dt>
+                <dd><input type="number" name="parentNumberStudents" ng-model="parentNumberStudents" maxlength="2" /></dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>Age of the older parent?</dt>
+                <dd><input type="number" name="parentAge" ng-model="parentAge" maxlength="2" /></dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>How much did the student's father earn from working the previous year?</dt>
+                <dd><input type="number" name="fatherWorkIncome" ng-model="fatherWorkIncome" /></dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>How much did the student's mother earn from working in the previous year?</dt>
+                <dd><input type="number" name="motherWorkIncome" ng-model="motherWorkIncome" /></dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>How much did the parents receive in untaxed income the previous year?</dt>
+                <dd><input type="number" name="parentUntaxedIncome" ng-model="parentUntaxedIncome" /></dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>What is the amount of other taxable income received in the previous year?</dt>
+                <dd><input type="number" name="parentAdditionalIncome" ng-model="parentAdditionalIncome" /></dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>As of today, what is your parents' current balance of cash, savings, and checking accounts?</dt>
+                <dd><input type="number" name="parentLiquidFunds" ng-model="parentLiquidFunds" /></dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>As of today, what is the net worth of your parents' investments, including real estate (not your parents' home)?</dt>
+                <dd><input type="number" name="parentInvestmentWorth" ng-model="parentInvestmentWorth" /></dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>As of today, what is the net worth of your parents' current businesses and/or investment farms?</dt>
+                <dd><input type="number" name="parentBusinessWorth" ng-model="parentBusinessWorth" /></dd>
+            </dl>
+            <hr />
+            <div class="buttons">
+                <input type="submit" class="button previous" value="Previous" ng-click="pfPrevious()" />
+                <input type="submit" class="button next" value="Next" ng-click="pfNext()" />
+            </div>
+        </form>
+    </fieldset>

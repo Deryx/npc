@@ -1,0 +1,59 @@
+    <!-- welcome.html -->
+    <fieldset>
+        <h2>Net Price Calculator</h2>
+        <h3>Welcome to the College of New Rochelle Net Price Calculator!</h3>
+        <p>The purpose of this calculator is to help students and their families understand the costs associated with attending The College of New Rochelle and the potential sources of financial aid the student may receive to offset those costs.</p>
+        <h4>It would bel helpful for both the student and parent(s) to have the following items available while completing the calculator:</h4>
+        <ul>
+            <li>Student and parent 2013 Income Tax Returns</li>
+            <li>Earnings statements (W2 forms, 1099 forms, recent paycheck stubs)</li>
+            <li>Bank and investment statements</li>
+            <li>
+                Student academic information:
+                <ul>
+                    <li>Grade point average (GPA)</li>
+                    <li>ACT Scores or</li>
+                    <li>SAT Scores</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Disclaimer</h4>
+        <p>This program is a financial aid estimation program. As such, the information provided by the program is an approximation, not a statement of fact. The sole purpose of this program is to give the student and his/her family an idea what financial resources may be needed/provided to attend The College of New Rochelle. This is not a commitment of an actual financial aid award.</p>
+        <h4>Let's Begin!</h4>
+        <p>Please begin by answering the questions below:</p>
+        <form>
+            <dl>
+                <dt>What school will the student attend?</dt>
+                <dd>
+                    <select name="school" ng-model="school">
+                        <option value=""></option>
+                        <option value="SAS">Arts &amp; Sciences</option>
+                        <option value="SN">Nursing</option>
+                        <option value="SNR">New Resources</option>
+                    </select>
+                </dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt>Does the student already have an expected family contribution (EFC) for the upcoming academic year?</dt>
+                <dd>
+                    <select name="efcStatus" ng-model="efcStatus">
+                        <option value=""></option>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </dd>
+            </dl>
+            <hr />
+            <div ng-show="efcStatus == 1">
+                <dl>
+                    <dt>What is the student's EFC?</dt>
+                    <dd><input type="number" ng-model="efc" name="efc" /></dd>
+                </dl>
+                <hr />
+            </div>
+            <div class="buttons">
+                <input type="submit" class="button next" value="Next" ng-click="welcomeNext()" />
+            </div>
+        </form>
+    </fieldset>

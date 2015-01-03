@@ -1,0 +1,211 @@
+{
+  "Allowances": {
+    "allowance": [
+      {
+        "age": "25",
+        "married": "0",
+        "unmarried": "0"
+      },
+      {
+        "age": "26",
+        "married": "2100",
+        "unmarried": "600"
+      },
+      {
+        "age": "27",
+        "married": "4300",
+        "unmarried": "1300"
+      },
+      {
+        "age": "28",
+        "married": "6400",
+        "unmarried": "1900"
+      },
+      {
+        "age": "29",
+        "married": "8600",
+        "unmarried": "2500"
+      },
+      {
+        "age": "30",
+        "married": "10700",
+        "unmarried": "3200"
+      },
+      {
+        "age": "31",
+        "married": "12800",
+        "unmarried": "3800"
+      },
+      {
+        "age": "32",
+        "married": "15000",
+        "unmarried": "4400"
+      },
+      {
+        "age": "33",
+        "married": "17100",
+        "unmarried": "5100"
+      },
+      {
+        "age": "34",
+        "married": "19300",
+        "unmarried": "5700"
+      },
+      {
+        "age": "35",
+        "married": "21400",
+        "unmarried": "6300"
+      },
+      {
+        "age": "36",
+        "married": "23500",
+        "unmarried": "7000"
+      },
+      {
+        "age": "37",
+        "married": "25700",
+        "unmarried": "7600"
+      },
+      {
+        "age": "38",
+        "married": "27800",
+        "unmarried": "8200"
+      },
+      {
+        "age": "39",
+        "married": "30000",
+        "unmarried": "8900"
+      },
+      {
+        "age": "40",
+        "married": "32100",
+        "unmarried": "9700"
+      },
+      {
+        "age": "41",
+        "married": "32900",
+        "unmarried": "9700"
+      },
+      {
+        "age": "42",
+        "married": "33700",
+        "unmarried": "9900"
+      },
+      {
+        "age": "43",
+        "married": "34500",
+        "unmarried": "10100"
+      },
+      {
+        "age": "44",
+        "married": "35400",
+        "unmarried": "10300"
+      },
+      {
+        "age": "45",
+        "married": "36200",
+        "unmarried": "10600"
+      },
+      {
+        "age": "46",
+        "married": "37100",
+        "unmarried": "10800"
+      },
+      {
+        "age": "47",
+        "married": "38000",
+        "unmarried": "11100"
+      },
+      {
+        "age": "48",
+        "married": "39000",
+        "unmarried": "11300"
+      },
+      {
+        "age": "49",
+        "married": "33900",
+        "unmarried": "11600"
+      },
+      {
+        "age": "50",
+        "married": "40900",
+        "unmarried": "11900"
+      },
+      {
+        "age": "51",
+        "married": "42100",
+        "unmarried": "12200"
+      },
+      {
+        "age": "52",
+        "married": "43100",
+        "unmarried": "12500"
+      },
+      {
+        "age": "53",
+        "married": "4420",
+        "unmarried": "12800"
+      },
+      {
+        "age": "54",
+        "married": "45500",
+        "unmarried": "13100"
+      },
+      {
+        "age": "55",
+        "married": "46800",
+        "unmarried": "13400"
+      },
+      {
+        "age": "56",
+        "married": "47900",
+        "unmarried": "13700"
+      },
+      {
+        "age": "57",
+        "married": "49300",
+        "unmarried": "14100"
+      },
+      {
+        "age": "58",
+        "married": "50800",
+        "unmarried": "14400"
+      },
+      {
+        "age": "59",
+        "married": "52200",
+        "unmarried": "14800"
+      },
+      {
+        "age": "60",
+        "married": "53500",
+        "unmarried": "15100"
+      },
+      {
+        "age": "61",
+        "married": "55000",
+        "unmarried": "15600"
+      },
+      {
+        "age": "62",
+        "married": "56900",
+        "unmarried": "16000"
+      },
+      {
+        "age": "63",
+        "married": "58500",
+        "unmarried": "16400"
+      },
+      {
+        "age": "64",
+        "married": "60100",
+        "unmarried": "16900"
+      },
+      {
+        "age": "65",
+        "married": "61800",
+        "unmarried": "17400"
+      }
+    ]
+  }
+}
