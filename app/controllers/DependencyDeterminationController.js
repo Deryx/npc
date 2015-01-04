@@ -7,6 +7,29 @@
     DependencyDeterminationController = function ($scope, $state, UserFactory) {
         $scope.index = 0;
 
+        $scope.studentBirthDate = UserFactory.birthDate;
+        $scope.$watch('studentBirthDate', function (newDate) {
+            if (newDate) {
+                UserFactory.setBirthDate(newDate);
+            }
+        });
+
+        $scope.calculateAge = function calculateAge(birthday) { // birthday is a date
+            var ageDifMs = Date.now() - birthday.getTime();
+            var ageDate = new Date(ageDifMs); // miliseconds from epoch
+            return Math.abs(ageDate.getUTCFullYear() - 1970);
+        };
+
+        $scope.studentAge = UserFactory.studentAge;
+        $scope.$watch('studentBirthDate', function (newDate) {
+            if (newDate) {
+                var studentBirthDate = new Date(newDate);
+                UserFactory.setStudentAge($scope.calculateAge(studentBirthDate));
+                $scope.index += 0;
+                if (UserFactory.studentAge >= 24) $scope.index++;
+            }
+        });
+
         $scope.dependentsStatus = UserFactory.dependentsStatus;
         $scope.$watch('dependentsStatus', function (newStatus) {
             if (newStatus) {
@@ -14,6 +37,7 @@
                 if (newStatus) $scope.index += $scope.dependentsStatus;
             }
         });
+        console.log(UserFactory.studentAge);
 
         $scope.studentMaritalStatus = UserFactory.studentMaritalStatus;
         $scope.$watch('studentMaritalStatus', function (newStatus) {

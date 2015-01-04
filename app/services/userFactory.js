@@ -9,6 +9,7 @@
         userFactory.campus = '';
         userFactory.efcStatus = '';
         userFactory.efc = 0;
+        userFactory.birthDate = '';
         userFactory.studentAge = '';
         userFactory.dependentsStatus = '';
         userFactory.studentMaritalStatus = '';
@@ -68,6 +69,13 @@
         };
         userFactory.getEFC = function () {
             return userFactory.efc;
+        };
+
+        userFactory.setBirthDate = function (date) {
+            userFactory.birthDate = date;
+        };
+        userFactory.getBirthDate = function () {
+            return userFactory.birthDate;
         };
 
         userFactory.setStudentAge = function (age) {
