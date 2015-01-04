@@ -5,13 +5,19 @@
             <h3>Dependency Determination</h3>
             <dl>
                 <dt>Student's date of birth?</dt>
-                <dd><input name="studentBirthDate" ng-model="studentBirthDate" type="text" jqdatepicker /></dd>
+                <dd>
+                    <input name="studentBirthDate" ng-model="studentBirthDate" type="text" jqdatepicker required />
+                    <div ng-show="birthDateError()">
+                        You must submit a birthdate.
+                    </div>
+                </dd>
             </dl>
             <hr />
             <dl>
                 <dt>Does the student have children or dependents other than a spouse who will receive at least 50% of their financial support from the student?</dt>
                 <dd>
-                    <select name="dependentsStatus" ng-model="dependentsStatus">
+                    <select name="dependentsStatus" ng-model="dependentsStatus" required>
+                        <option value=""></option>
                         <option value="1">Yes</option>
                         <option value="0">No</option>
                     </select>
@@ -21,7 +27,8 @@
             <dl>
                 <dt>What is the student's marital status as of today?</dt>
                 <dd>
-                    <select name="studentMaritalStatus" ng-model="studentMaritalStatus">
+                    <select name="studentMaritalStatus" ng-model="studentMaritalStatus" required>
+                        <option value=""></option>
                         <option value="1">Married</option>
                         <option value="2">Single</option>
                         <option value="3">Divorced</option>
@@ -34,7 +41,8 @@
             <dl>
                 <dt>Is the student currently serving on active duty in the U.S. Armed Forces, National Guard or Reserves for purposes other than training?</dt>
                 <dd>
-                    <select name="militaryStatus" ng-model="militaryStatus">
+                    <select name="militaryStatus" ng-model="militaryStatus" required>
+                        <option value=""></option>
                         <option value="1">Yes</option>
                         <option value="0">No</option>
                     </select>
@@ -44,7 +52,8 @@
             <dl>
                 <dt>Is the student a veteran of the U.S. Armed Forces?</dt>
                 <dd>
-                    <select name="veteranStatus" ng-model="veteranStatus">
+                    <select name="veteranStatus" ng-model="veteranStatus" required>
+                        <option value=""></option>
                         <option value="1">Yes</option>
                         <option value="0">No</option>
                     </select>
@@ -54,7 +63,8 @@
             <dl>
                 <dt>When the student was age 13 or older, was the student in foster care, a dependent/ward of the court, or were both of the student's parents deceased?</dt>
                 <dd>
-                    <select name="orphanStatus" ng-model="orphanStatus">
+                    <select name="orphanStatus" ng-model="orphanStatus" required>
+                        <option value=""></option>
                         <option value="1">Yes</option>
                         <option value="0">No</option>
                     </select>

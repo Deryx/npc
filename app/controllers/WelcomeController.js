@@ -21,7 +21,9 @@
         });
 
         $scope.welcomeNext = function () {
-            $state.go('dependencyDetermination');
+            if ($scope.school != "" && $scope.efcStatus != "") {
+                $state.go('dependencyDetermination');
+            }
         };
     };
 

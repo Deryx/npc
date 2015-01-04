@@ -81,12 +81,37 @@
                 UserFactory.setDependencyStatus('independent');
         });
 
+        $scope.showBirthDateError = false;
+
         $scope.ddPrevious = function () {
             $state.go('welcome');
         };
 
         $scope.ddNext = function () {
-            $state.go('studentInformation');
+            var dataComplete = true;
+            if ($scope.studentBirthDate.length == 0 || !$scope.studentBirthDate instanceof Date) {
+                $scope.showBirthDateError = true;
+                dataComplete = false;
+            }
+            if ($scope.dependentsStatus == "") {
+                dataComplete = false;
+            }
+            if ($scope.studentMaritalStatus == "") {
+                dataComplete = false;
+            }
+            if ($scope.militaryStatus == "") {
+                dataComplete = false;
+            }
+            if ($scope.veteranStatus == "") {
+                dataComplete = false;
+            }
+            if ($scope.orphanStatus == "") {
+                dataComplete = false;
+            }
+
+            if (dataComplete == true) {
+                $state.go('studentInformation');
+            }
         }
     };
 
