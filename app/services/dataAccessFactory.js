@@ -3,7 +3,7 @@
  */
 (function() {
     var DataAccessFactory = function ($http) {
-        var urlBase = 'app/data';
+        var urlBase = 'https://github/Deryx/npc/app/data';
         var factory = {};
 
         factory.getJSONData = function(tableFile) {
